@@ -1,0 +1,8 @@
+.sidebar {
+    background: #013243;
+    position: fixed;
+}
+.sidebar li {
+    margin-bottom: 2em;
+}
+
