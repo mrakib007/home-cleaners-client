@@ -15,21 +15,7 @@ const DashBoard = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const [isAdmin, setAdmin] = useState([]);
 
-  // useEffect(() => {
-  //   fetch(" https://fathomless-wave-03932.herokuapp.com/admin?email=" + loggedInUser.email)
-  //     .then((res) => res.json())
-  //     .then((data) => setAdmin(data));
-  // }, []);
 
-  // useEffect(() => {
-  //   fetch(" https://fathomless-wave-03932.herokuapp.com/admin",{
-  //     method:'POST',
-  //     headers:{'content-type':'application/json'},
-  //     body:JSON.stringify({email:loggedInUser.email})
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => setAdmin(data));
-  // }, []);
 
   return (
     <section>
