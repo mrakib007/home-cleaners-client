@@ -14,7 +14,7 @@ const ServiceDescription = (props) => {
 
     return (
         <Col md={4} className="text-center">
-            <img style={{ height: '200px' }} src={`http://localhost:5000/${service.img}`} alt="" />
+            <img style={{ height: '200px' }} src={`https://fathomless-wave-03932.herokuapp.com/${service.img}`} alt="" />
             <h5 className="mt-3 mb-3">{name}</h5>
             <h5>Price : {price}</h5>
             <p className="text-secondary">
