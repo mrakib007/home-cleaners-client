@@ -13,7 +13,7 @@ const Book = () => {
     const [payment,setPayment] = useState(null);
     useEffect(() => {
        
-        fetch(`http://localhost:5000/book/${id}`)
+        fetch(` https://fathomless-wave-03932.herokuapp.com/book/${id}`)
           .then((res) => res.json())
           .then((data) => setOrder(data[0]));
       }, [id]);
@@ -37,7 +37,7 @@ const Book = () => {
       formData.append('email', loggedInUser.email);
       formData.append('price',order.price);
     
-    fetch('http://localhost:5000/book', {
+    fetch(' https://fathomless-wave-03932.herokuapp.com/book', {
       method: 'POST',
       body: formData,
   })

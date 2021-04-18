@@ -15,7 +15,7 @@ const Review = () => {
       formData.append('name',review.name);
       formData.append('review',review.review);
 
-      fetch('http://localhost:5000/review', {
+      fetch(' https://fathomless-wave-03932.herokuapp.com/review', {
         method: 'POST',
         body: formData,
     })

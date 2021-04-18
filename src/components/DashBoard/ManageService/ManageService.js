@@ -4,14 +4,14 @@ import { Button, Table } from "react-bootstrap";
 const ManageService = () => {
   const [services, manageService] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch(" https://fathomless-wave-03932.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => manageService(data));
   }, []);
 
   const handleDelete = (id) => {
     console.log(id);
-    fetch(`http://localhost:5000/delete/${id}`, {
+    fetch(` https://fathomless-wave-03932.herokuapp.com/delete/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

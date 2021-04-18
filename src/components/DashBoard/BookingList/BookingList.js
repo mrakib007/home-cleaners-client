@@ -7,7 +7,7 @@ const BookingList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   
     useEffect(() => {
-      fetch("http://localhost:5000/deals?email=" + loggedInUser.email)
+      fetch(" https://fathomless-wave-03932.herokuapp.com/deals?email=" + loggedInUser.email)
         .then((res) => res.json())
         .then((data) => setBookingList(data));
     }, []);

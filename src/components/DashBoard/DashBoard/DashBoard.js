@@ -16,7 +16,7 @@ const DashBoard = () => {
   const [isAdmin, setAdmin] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/admin?email=" + loggedInUser.email)
+    fetch(" https://fathomless-wave-03932.herokuapp.com/admin?email=" + loggedInUser.email)
       .then((res) => res.json())
       .then((data) => setAdmin(data));
   }, []);
@@ -48,21 +48,6 @@ const DashBoard = () => {
               </Route>
             </div>
 
-            {/* <Route path="/addService">
-                <AddService></AddService>
-              </Route>
-
-              <Route path="/makeAdmin">
-                <MakeAdmin></MakeAdmin>
-              </Route>
-
-              <Route path="/allBooking">
-                <AllBooking></AllBooking>
-              </Route>
-
-              <Route path="/manageService">
-                <ManageService></ManageService>
-              </Route> */}
 
             <div>
               <Route path="/book/:id">

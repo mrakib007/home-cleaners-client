@@ -15,7 +15,7 @@ const MakeAdmin = () => {
 
         formData.append('email', email.email);
 
-        fetch('http://localhost:5000/makeAdmin', {
+        fetch(' https://fathomless-wave-03932.herokuapp.com/makeAdmin', {
             method: 'POST',
             body: formData,
         })
