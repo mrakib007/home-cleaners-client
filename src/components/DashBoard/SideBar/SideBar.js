@@ -9,9 +9,9 @@ const SideBar = () => (
     >
         <ul className="list-unstyled">
             <li>
-                <Link to="/dashboard" className="text-white">
+                {/* <Link to="/dashboard" className="text-white">
                      <span>Dashboard</span>
-                </Link>
+                </Link> */}
             </li>
             <li>
                 <Link to="/addService" className="text-white">

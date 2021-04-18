@@ -27,6 +27,8 @@ const MakeAdmin = () => {
                 console.error(error);
             });
     }
+
+    
     return (
         <form ml-5 onSubmit={handleSubmit}>
         <div class="form-group">
