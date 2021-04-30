@@ -9,5 +9,3 @@
  
  
   Live site : https://assignment-11-client.web.app/
-  Github (Client) : https://github.com/mrakib007/home-cleaners-client
-  Github  (Server): https://github.com/mrakib007/home-cleaners-server
